@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arth Tiwari Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+    <div class="particles"></div>
+
+    <header>
+        <h1 class="fade">Amit Tiwari</h1>
+        <p class="fade">Web Developer • Programmer • AI Enthusiast</p>
+        <button id="themeBtn">Toggle Theme</button>
+        <button id="wallpaperBtn">🎨 Change Wallpaper</button>
+
+<div id="wallpaperPanel" class="wallpaper-panel">
+    <h3>Choose Background</h3>
+
+    <button data-wallpaper="default">Default</button>
+    <button data-wallpaper="neon">Neon</button>
+    <button data-wallpaper="aurora">Aurora</button>
+    <button data-wallpaper="grid">Cyber Grid</button>
+    <button data-wallpaper="particles">Particles</button>
+</div>
+    </header>
+
+    <section class="card">
+        <h2>About Me</h2>
+        <p>
+            First-year Engineering student passionate about Web Development,
+            AI, Cybersecurity, and Software Development.
+        </p>
+         <p>
+    GitHub:
+    <a href="https://github.com/amitjustfiles11"
+       target="_blank"
+       rel="noopener noreferrer">
+        github.com/amitjustfiles11
+    </a>
+    
+</p>
+    </section>
+
+    <section class="card">
+        <h2>Skills</h2>
+
+        <div class="skill">
+            <span>HTML</span>
+            <div class="bar"><div class="progress html"></div></div>
+        </div>
+
+        <div class="skill">
+            <span>CSS</span>
+            <div class="bar"><div class="progress css"></div></div>
+        </div>
+
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="bar"><div class="progress js"></div></div>
+        </div>
+
+        <div class="skill">
+            <span>C++</span>
+            <div class="bar"><div class="progress cpp"></div></div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Digital Clock</h3>
+            <p>Interactive clock application.</p>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Personal responsive portfolio.</p>
+        </div>
+
+        <div class="project">
+            <h3>Student Form</h3>
+            <p>Registration form with validation.</p>
+        </div>
+       
+    </section>
+
+    <section class="card">
+        <h2>Current Time</h2>
+        <h1 id="clock"></h1>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

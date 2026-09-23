@@ -1,0 +1,446 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    min-height:100vh;
+    transition:0.5s;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    color:#cbd5e1;
+}
+
+#themeBtn{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#themeBtn:hover{
+    transform:scale(1.1);
+}
+
+.card{
+    width:80%;
+    margin:30px auto;
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.skill{
+    margin:20px 0;
+}
+
+.bar{
+    width:100%;
+    height:20px;
+    background:#334155;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    height:100%;
+    border-radius:20px;
+    animation:load 2s ease-in-out;
+}
+
+.html{width:95%;background:#f97316;}
+.css{width:90%;background:#3b82f6;}
+.js{width:75%;background:#eab308;}
+.cpp{width:80%;background:#22c55e;}
+
+@keyframes load{
+    from{width:0;}
+}
+
+.project{
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    margin-top:15px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:scale(1.03);
+}
+
+.fade{
+    animation:fadeIn 2s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.light{
+    background:#f8fafc;
+    color:#111827;
+}
+/* =========================
+   CUSTOM CURSOR
+========================= */
+
+body {
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition:
+        width 0.2s ease,
+        height 0.2s ease,
+        background 0.2s ease;
+}
+
+.cursor-ring {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition:
+        width 0.3s ease,
+        height 0.3s ease,
+        border 0.3s ease,
+        transform 0.1s ease;
+}
+
+/* Hovering clickable elements */
+
+.cursor.hover {
+    width: 18px;
+    height: 18px;
+}
+
+.cursor-ring.hover {
+    width: 65px;
+    height: 65px;
+    border-width: 3px;
+}
+
+/* Hovering portfolio cards */
+
+.card.cursor-hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(255,255,255,0.15);
+}
+
+/* Hovering project cards */
+
+.project.cursor-hover {
+    transform: scale(1.05) rotateX(3deg);
+}
+
+/* Hide custom cursor on mobile */
+
+@media (max-width: 768px) {
+    body {
+        cursor: auto;
+    }
+
+    .cursor,
+    .cursor-ring {
+        display: none;
+    }
+}
+.contact-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.contact-link:hover {
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px white;
+}
+
+.contact-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.3s ease;
+}
+
+.contact-link:hover::after {
+    width: 100%;
+}
+/* =========================
+   WALLPAPER SYSTEM
+========================= */
+
+body {
+    position: relative;
+    min-height: 100vh;
+    transition: background 0.8s ease;
+}
+
+/* Wallpaper button */
+
+#wallpaperBtn {
+    margin: 10px;
+    padding: 12px 22px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 30px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    cursor: none;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+#wallpaperBtn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(255,255,255,0.3);
+}
+
+/* Wallpaper menu */
+
+.wallpaper-panel {
+    position: fixed;
+    top: 80px;
+    right: 25px;
+    width: 220px;
+    padding: 20px;
+    border-radius: 20px;
+
+    background: rgba(15,23,42,0.85);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px) scale(0.95);
+
+    transition: 0.4s ease;
+
+    z-index: 5000;
+}
+
+.wallpaper-panel.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.wallpaper-panel h3 {
+    margin-bottom: 15px;
+}
+
+.wallpaper-panel button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.1);
+    color: white;
+
+    cursor: none;
+
+    transition: 0.3s;
+}
+
+.wallpaper-panel button:hover {
+    transform: translateX(8px);
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* =========================
+   WALLPAPER 1 - DEFAULT
+========================= */
+
+body.wallpaper-default {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+    );
+}
+
+
+/* =========================
+   WALLPAPER 2 - NEON
+========================= */
+
+body.wallpaper-neon {
+    background:
+        radial-gradient(circle at 20% 30%, #ff00cc, transparent 25%),
+        radial-gradient(circle at 80% 70%, #00ffff, transparent 25%),
+        #050505;
+
+    animation: neonMove 8s infinite alternate;
+}
+
+@keyframes neonMove {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+
+/* =========================
+   WALLPAPER 3 - AURORA
+========================= */
+
+body.wallpaper-aurora {
+    background:
+        linear-gradient(
+            120deg,
+            #020617,
+            #064e3b,
+            #312e81,
+            #020617
+        );
+
+    background-size: 400% 400%;
+
+    animation: aurora 12s ease infinite;
+}
+
+@keyframes aurora {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* =========================
+   WALLPAPER 4 - CYBER GRID
+========================= */
+
+body.wallpaper-grid {
+    background-color: #020617;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.08) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.08) 1px,
+            transparent 1px
+        );
+
+    background-size: 40px 40px;
+
+    animation: gridMove 4s linear infinite;
+}
+
+@keyframes gridMove {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 40px 40px;
+    }
+}
+
+
+/* =========================
+   WALLPAPER 5 - PARTICLES
+========================= */
+
+body.wallpaper-particles {
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255,255,255,0.2) 2px,
+            transparent 3px
+        ),
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(255,255,255,0.15) 2px,
+            transparent 3px
+        ),
+        radial-gradient(
+            circle at 40% 80%,
+            rgba(255,255,255,0.2) 2px,
+            transparent 3px
+        ),
+        #020617;
+
+    background-size:
+        120px 120px,
+        180px 180px,
+        220px 220px;
+
+    animation: particlesMove 15s linear infinite;
+}
+
+@keyframes particlesMove {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 300px 300px;
+    }
+}
