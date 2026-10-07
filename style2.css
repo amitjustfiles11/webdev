@@ -1,0 +1,14 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #99b1b99f;
+}
+
+h1 {
+  color: #085956;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
