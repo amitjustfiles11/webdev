@@ -1,20 +1,29 @@
 /* styles.css */
 body {
   font-family: Arial, sans-serif;
-  background-color: #99b1b99f;
+background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 h1 {
-  color: #085956;
+  color: #042b2a;
 }
 
 p {
   font-size: 20px;
   line-height: 1.5;
+  color: #350b8a9f;
 }
+div 
 p     
- { color: rgb(22, 28, 7); }
+ { color: rgb(164, 210, 49); }
 .note  
 { color: orange; }
-#intro 
-{ color: purple; }
+#introu 
+{ color: rgb(112, 150, 8); background: #051113; }
+#introe {
+    background: #09bce4;
+}
+#introi {
+    background: #04542c;
+}
