@@ -15,8 +15,12 @@ p {
   color: #350b8a9f;
 }
 div 
-p     
- { color: rgb(164, 210, 49); }
+p   
+{
+  font-size: 20px;
+}
+p
+ { color: rgb(75, 98, 19); }
 .note  
 { color: orange; }
 #introu 
@@ -33,6 +37,19 @@ p
       margin: 50px;
 }
 .img  {
-    width: 100px;
+    width: 160px;
+    padding: 0.5%;
+    height: 130px;
+     border: 1.5px solid black;
+     margin-left: 100px;
    
+}
+.em-text{
+  font-size: 16px;
+}
+.rem-text {
+  font-size: 32px;
+}
+.coll {
+margin-left: 50px;
 }
