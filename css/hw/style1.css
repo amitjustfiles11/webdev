@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("/Photo\ on\ 9-23-26\ at\ 1.13\ AM.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.name {
+    position: fixed;
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.top-center {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.center-left {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.center-right {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.bottom-center {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
