@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTAMP:20261006T145043Z
+UID:b91c1eff0da586db032257a3e09dcbc8
+DTSTART:20261024T123000Z
+DTEND:20261025T123000Z
+DESCRIPTION:Orchestrate October'26 is a 24-hour hackathon to design\, build
+ \, and ship an AI agent.\n\nTimeline:\n- Challenge starts: Oct 24\, 2026\,
+  12:30 PM UTC and runs for 24 hours\, staying active until Oct 25\, 2026\,
+  12:30 PM UTC. Your challenge arrives by email when it begins.\n- AI judge
+  interview: opens as soon as you submit\, and stays open until Oct 26\, 20
+ 26\, 12:30 AM UTC.\n- Results announced: Oct 27\, 2026\, 12:30 PM UTC.\n\n
+ Challenge page: https://www.hackerrank.com/contests/hackerrank-orchestrate
+ -october26/challenges\nJoin the Discord: https://discord.gg/TzsUaAhPbr
+ORGANIZER;CN=HackerRank Team:mailto:hackers@hackerrank.com
+SUMMARY:Orchestrate October'26
+URL:https://www.hackerrank.com/contests/hackerrank-orchestrate-october26/ch
+ allenges
+ATTENDEE;RSVP=TRUE:mailto:harsh5217a@gmail.com
+X-MICROSOFT-DISALLOW-COUNTER:TRUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+SUMMARY:Orchestrate October'26 starts soon
+END:VALARM
+END:VEVENT
+END:VCALENDAR

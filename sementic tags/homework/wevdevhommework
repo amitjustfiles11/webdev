@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><strong><u>Mirai school of technology</u></strong></h1>
+        <p class="box">Welcome to my college website</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+    <p id="p101" class="para">hello HTML</p>
+    <p id="p102" class="para">hello CSS</p>
+    <p id="p103" class="para">hello JAVASCRIPT</p>
+
+    <main>
+<div>
+    <p>hello</p>
+    <div>
+        <p>world</p>
+    </div>
+</div>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p >
+                Welcome to my college. It is a place where students
+                learn, grow and build their future.
+            </p>
+        </section>
+
+        <section id="about">
+            <h2>About Mirai</h2>
+
+            <article>
+                <h3>College Information</h3>
+                <p>
+                    Mirai provides quality education along with
+                    opportunities for sports, technology and other activities.
+                </p>
+            </article>
+
+            <article id="courses">
+                <h3>Courses Offered</h3>
+                <ul>
+                    <li>B.Tech Computer Science</li>
+                    <li>B.Tech CSE (AI/ML)</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>College Video</h2>
+
+            <video width="400" controls>
+                <source src="/This Is What Your First Week At Mirai School Of Technology Will Look Like - Mirai School of Technology (1080p, h264).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>College Location</h2>
+
+            <iframe
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.017896671693!2d77.03800077570382!3d28.44887689239672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x44efbf1c1bc2f933%3A0x379f52432ffa6fcc!2sMirai%20School%20of%20Technology!5e0!3m2!1sen!2sin!4v1791264720110!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </iframe>
+                  </section><br>
+                  <audio controls><source src
+                    ="/Mujhe Tumse Mohabbat Hai  Lyrical Video  Tumsa Nahin Dekha A Love Story  Dia Mirza Emraan Hashmi - Saregama Music.mp3"></audio>
+  
+
+    </main>
+
+    <footer id="contact">
+        <p style=color:aqua; >&copy; 2026 Mirai. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
